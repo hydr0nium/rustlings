@@ -5,7 +5,6 @@
 // Execute `rustlings hint tests4` or use the `hint` watch subcommand for a
 // hint.
 
-
 struct Rectangle {
     width: i32,
     height: i32
@@ -31,6 +30,12 @@ mod tests {
         let rect = Rectangle::new(10, 20);
         assert_eq!(rect.width, 10); // check width
         assert_eq!(rect.height, 20); // check height
+    }
+
+    fn other_test() {
+        let s = String::from("This is a test");
+        assert_eq!(s, String::from("This is a test"));
+        println!("{}", s);
     }
 
     #[test]
